@@ -185,7 +185,7 @@ def generate_test_cases(prompt, history_cases=None, knowledge_segments=None, max
     try:
         response = requests.post(
             "https://api.lkeap.cloud.tencent.com/v1",
-            headers=headers,
+            headers={"Authorization": "Bearer sk-luxP7Yj39k15PD4sr3GcRHU1P9d7VqS5DA88gxohRnv2qx7S"},
             json={
                 "model": "deepseek-r1",
                 "messages": [
